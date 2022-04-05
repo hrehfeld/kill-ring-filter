@@ -432,7 +432,7 @@ zoophilia"))
 (defun kill-ring-filter ()
   "Remove entries in kill-ring if they are matched by anything in kill-ring-filter-filter-res."
   (interactive)
-  (setq kill-ring (filter #'kill-ring-filter-filter-string kill-ring)))
+  (setq kill-ring (seq-filter #'kill-ring-filter-filter-string kill-ring)))
 
 (defun kill-ring-filter-advice (&rest args)
   (kill-ring-filter-timer-cancel)
