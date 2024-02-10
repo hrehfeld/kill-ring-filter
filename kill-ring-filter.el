@@ -404,8 +404,6 @@ whore
 worldsex
 wrapping men
 wrinkled starfish
-xx
-xxx
 yaoi
 yellow showers
 yiffy
