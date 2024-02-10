@@ -410,8 +410,9 @@ yaoi
 yellow showers
 yiffy
 zoophilia"))
-    (split-string words "
-" t " "))
+    (list (format "\\(%s\\)" (string-join
+                              (split-string words "
+" t " ") "\\|"))))
   "A list of bad words from https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words. Creative Commons Attribution 4.0 International, but I couldn't figure out the author. See https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/LICENSE")
 
 (defcustom kill-ring-filter-filter-res kill-ring-filter-nsfw-words-en "List of regular expressions that are used to filter kill-ring entries")
